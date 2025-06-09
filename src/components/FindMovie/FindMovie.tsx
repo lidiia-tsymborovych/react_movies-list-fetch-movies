@@ -66,7 +66,7 @@ export const FindMovie: React.FC<FindMovieProps> = ({ onAdd }) => {
               type="text"
               id="movie-title"
               placeholder="Enter a title to search"
-              className="input is-danger"
+              className={`input ${error ? 'input is-danger' : ''}`}
               value={query}
               onChange={handleInputChange}
             />
